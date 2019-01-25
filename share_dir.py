@@ -140,7 +140,7 @@ for bunch in batch(file_items, n=10):
             email=email_to_share))
         user_permission = {
             'type': 'user',
-            'role': 'writer',
+            'role': 'reader',
             'emailAddress': email_to_share
         }
         batch.add(service.permissions().create(
